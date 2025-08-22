@@ -35,6 +35,11 @@ export default function App() {
           {activeTab === "Reports" && <Reports searchQuery={searchQuery} />}
           {activeTab === "Settings" && <Settings onClearAll={handleClearAll} />}
         </main>
+        <footer className="mt-20 py-6 text-center border-t border-gray-200">
+          <p className="text-sm text-gray-600">
+            © {new Date().getFullYear()} Vaaan Infra. All rights reserved.
+          </p>
+        </footer>
       </div>
     </div>
   );
